@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white h-[100%]">
+    <header class="sticky top-0" >
+        <!-- heaader button section -->
+        <div class=" bg-[#F9F7F3] h-[8vw] flex items-center">
+            <div class="flex justify-between w-[80vw] m-auto">
+                <!-- this is the home button -->
+                <div>
+                    <a href="index.html"><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] text-[16px] text-black">Home</button></a>
+                </div>
+                <!-- donate bangladesh -->
+                <div class="flex items-center ">
+                    <img class="w-[3vw] mx-1 " src="assets/logo.png" alt="">
+                    <P class="text-[3vw] text-black  font-semibold">Donate Bangladesh</P>
+                </div>
+                <!-- available donation blance -->
+                <div class="flex items-center gap-2">
+                    <img class="w-[3vw] mx-1 " src="assets/coin.png" alt="">
+                    <p id="nav-total" class="text-[3vw] text-black font-semibold">5500</p><p class="text-[2vw] font-bold text-grey-100"> BDT</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- faq section -->
+            <div>
+                <h1 class=" w-[80vw]  m-auto my-2 p-4 text-3xl text-black font-extrabold"> Important FAQ </h1>
+            </div>
+        </section>
+        <!-- question section -->
+        <section class="pb-20 overflow-y-auto">
+            
+            <!-- question one -->
+            <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-sm font-medium text-black">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each object corresponds to part of the document (like elements, attributes, and text). This allows programming languages like JavaScript to manipulate the content, structure, and style of a webpage dynamically.</p>
+                </div>
+            </div>
+            
+            <!-- question two -->
+            <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-sm font-medium text-black">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>
+
+                        1.document.getElementById('myId'): Selects by ID. <br>
+                        2.document.querySelector('.myClass'): Selects the first matching element by CSS selector. <br>
+                        3.document.getElementsByClassName('myClass'): Selects elements by class name. <br>
+                        4.document.getElementsByTagName('div'): Selects elements by tag name. <br>
+                    </p>
+                </div>
+            </div>
+            <!-- q3 -->
+            <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-sm font-medium text-black">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>
+                    Event delegation is a technique in the DOM where a single event listener is added to a parent element instead of individual listeners on each child element. When an event occurs, it bubbles up from the target child to the parent, allowing the parent to handle the event.<br><br>
+
+                    Benefits: <br>
+                    1.Efficiency: Reduces memory usage by minimizing the number of event listeners. <br>
+                    2.Dynamic Elements: Automatically handles events for newly added child elements without needing to reattach listeners. <br>
+                    3.Simplified Code: Makes it easier to manage events for groups of elements. <br>
+                  </p>
+                </div>
+            </div>
+            <!-- q4 -->
+            <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-sm font-medium text-black">
+                    How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        1.Set Attributes <br>
+                        element.setAttribute('attributeName', 'value');<br>
+                        2.Get Attributes <br>
+                        const value = element.getAttribute('attributeName'); <br>
+                        3.Common Attributes (Direct Properties) <br>
+                        element.id = 'newId';          // Set ID <br>
+                        element.className = 'newClass'; // Set class <br>
+                        4.Styles <br>
+                        element.style.propertyName = 'value'; // Example <br>
+                        element.style.backgroundColor = 'blue'; <br>
+                        element.style.fontSize = '16px'; <br>
+
+
+
+
+                        
+                    </p>
+                </div>
+            </div>
+           
+              
+        </section>
+    </main>
+    
+</body>
+</html>
